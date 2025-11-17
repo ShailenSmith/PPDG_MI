@@ -1,3 +1,6 @@
+import os, sys
+sys.path.append(os.path.join(os.getcwd(), 'PPDG_MI', 'high_resolution'))
+
 from copy import copy
 from typing import List
 

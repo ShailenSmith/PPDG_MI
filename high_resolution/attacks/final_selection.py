@@ -1,9 +1,12 @@
+import os, sys
+sys.path.append(os.getcwd())
+
 import torch
 import torch.nn.functional as F
-from utils.stylegan import create_image
 import torchvision.transforms as T
 from torch.utils.data import TensorDataset, DataLoader
 
+from utils.stylegan import create_image
 
 def scores_by_transform(imgs,
                         targets,
