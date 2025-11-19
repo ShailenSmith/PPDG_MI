@@ -69,7 +69,7 @@ class DistanceEvaluation():
         target_values = set(targets.cpu().tolist())
         smallest_distances = []
         mean_distances_list = [['target', 'mean_dist']]
-        for step, target in enumerate(target_values):
+        for step, target in enumerate(target_values): #! but only one target comes in, so this loop only runs once
             mask = torch.where(targets == target, True, False)
             w_masked = w[mask]
             target_subset = SingleClassSubset(self.train_set,
