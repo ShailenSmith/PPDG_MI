@@ -8,14 +8,14 @@ import timm
 import torch
 import torch.nn as nn
 import wandb
-from metrics.accuracy import Accuracy
+from PPDG_MI.high_resolution.metrics.accuracy import Accuracy
 from torch.utils.data import DataLoader
 from torchvision.models import densenet, inception, resnet
 from torchvision.transforms import (ColorJitter, RandomCrop,
                                     RandomHorizontalFlip, Resize)
 from tqdm import tqdm
 
-from models.base_model import BaseModel
+from PPDG_MI.high_resolution.models.base_model import BaseModel
 import torch.nn.functional as F
 from collections import defaultdict
 
