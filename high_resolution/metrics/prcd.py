@@ -121,8 +121,8 @@ import torch
 from pytorch_fid.inception import InceptionV3
 
 sys.path.insert(0, '/workspace')
-from datasets.custom_subset import SingleClassSubset
-from utils.stylegan import create_image
+from PPDG_MI.high_resolution.datasets.custom_subset import SingleClassSubset
+from PPDG_MI.high_resolution.utils.stylegan import create_image
 
 
 class PRCD:
