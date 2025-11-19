@@ -5,15 +5,15 @@ import numpy as np
 import torch.optim as optim
 import torchvision.transforms as T
 import yaml
-from models.classifier import Classifier
+from PPDG_MI.high_resolution.models.classifier import Classifier
 from rtpt.rtpt import RTPT
 from torchvision.datasets import *
 
-from datasets.celeba import CelebA1000
-from datasets.custom_subset import Subset
-from datasets.facescrub import FaceScrub
-from datasets.stanford_dogs import StanfordDogs
-from utils.datasets import get_normalization
+from PPDG_MI.high_resolution.datasets.celeba import CelebA1000
+from PPDG_MI.high_resolution.datasets.custom_subset import Subset
+from PPDG_MI.high_resolution.datasets.facescrub import FaceScrub
+from PPDG_MI.high_resolution.datasets.stanford_dogs import StanfordDogs
+from PPDG_MI.high_resolution.utils.datasets import get_normalization
 
 
 class TrainingConfigParser:

@@ -1,9 +1,9 @@
 import torch
 import wandb
 
-from metrics.distance_metrics import DistanceEvaluation
-from models.classifier import Classifier
-from utils.training_config_parser import TrainingConfigParser
+from PPDG_MI.high_resolution.metrics.distance_metrics import DistanceEvaluation
+from PPDG_MI.high_resolution.models.classifier import Classifier
+from PPDG_MI.high_resolution.utils.training_config_parser import TrainingConfigParser
 
 
 def load_model(run_path,

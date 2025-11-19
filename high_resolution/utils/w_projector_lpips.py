@@ -17,7 +17,7 @@ from tqdm import tqdm
 import dnnlib
 import torch.nn as nn
 
-from losses import mmd_loss, ct_loss
+from PPDG_MI.high_resolution.losses import mmd_loss, ct_loss
 
 
 def mmd(G,
